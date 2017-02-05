@@ -38,7 +38,7 @@ function draw() {
     noStroke();
 	var r=map(rotationX,-180,180,100,255);
 	var g=map(rotationY,-180,180,100,255);
-	var b=(r+g)/2;
+	var b=100;
     fill(r,g,b);
     ellipse(x, y, 10, 10);
 }
