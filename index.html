@@ -22,7 +22,7 @@ var vy = 0;
 var ax = 0;
 var ay = 0;
  
-var vMultiplier = 0.0004;
+var vMultiplier = 0.0008;
 var bMultiplier = 0.05;
 
 function setup() {
@@ -40,7 +40,7 @@ function draw() {
 	var g=map(rotationY,-180,180,200,255);
 	var b=(r+g)/2;
     fill(r,g,b,5);
-	ellipse(x, y, 200, 200);
+	ellipse(x, y, 150, 150);
 
  
 }
