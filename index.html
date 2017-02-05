@@ -37,9 +37,9 @@ function draw() {
     ballMove();
     noStroke();
 	//background(0,0,200,5);
-	var r=map(rotationX,-180,180,10,255);
-	var g=map(rotationY,-180,180,10,255);
-	var b=map(rotationZ,-180,180,100,255);
+	var r=map(rotationX,-100,100,10,255);
+	var g=map(rotationY,-100,100,10,255);
+	var b=map(rotationZ,-100,100,100,255);
    	fill(r,g,b,5);
 	ellipse(x, y, 200, 200);
 
@@ -51,8 +51,8 @@ function ballMove() {
 	ax = rotationX;
 	ay = rotationY;
 
-	vx = vx+ ay/2;
-	vy = vy+ax/2;
+	vx = vx+ ay;
+	vy = vy+ax;
 	y = y + vy * vMultiplier; 
 	x = x + vx * vMultiplier;
 
