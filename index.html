@@ -35,7 +35,7 @@ function setup() {
 function draw() {
     
     ballMove();
-    fill(0,50);
+    noFill()
     ellipse(x, y, 10, 10);
 }
 
@@ -44,8 +44,8 @@ function ballMove() {
 	ax = rotationX;
 	ay = rotationY;
 
-	vx =  ay;
-	vy = ax;
+	vx = vx+ ax/2;
+	vy = vy+ay/2;
 	y = y + vy * vMultiplier; 
 	x = x + vx * vMultiplier;
 
