@@ -35,7 +35,8 @@ function setup() {
 function draw() {
     background(255,20);
     ballMove();
-    noFill()
+    noStroke();
+    fill(rotationX,rotationY,(rotationX+rotationY)/2);
     ellipse(x, y, 10, 10);
 }
 
