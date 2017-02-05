@@ -26,7 +26,7 @@ var vMultiplier = 0.0008;
 var bMultiplier = 0.08;
 
 function setup() {
-    createCanvas(displayWidth, displayHeight);
+    createCanvas(displayWidth*0.9, displayHeight*0.9);
     fill(0);
 	x=displayWidth/2;
 	y = displayHeight/2;
@@ -41,7 +41,7 @@ function draw() {
 	var g=map(rotationY,-100,100,10,255);
 	var b=map(rotationZ,-100,100,10,255);
    	fill(r,g,b,20);
-	ellipse(x, y, 200, 200);
+	ellipse(x, y, displayWidth/4, displayHeight/4);
 
  
 }
