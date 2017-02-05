@@ -36,11 +36,11 @@ function draw() {
     
     ballMove();
     noStroke();
-	background(0,0,200,5);
+	//background(0,0,200,5);
 	var r=map(rotationX,-180,180,200,255);
 	var g=map(rotationY,-180,180,200,255);
 	var b=(r+g)/2;
-    fill(r,g,b,10);
+    fill(r,g,b,3);
 	ellipse(x, y, 200, 200);
 
  
