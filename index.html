@@ -36,7 +36,7 @@ function draw() {
     
     ballMove();
     noStroke();
-	background(0,1);
+	background(0,0,200,0.5);
 	var r=map(rotationX,-180,180,200,255);
 	var g=map(rotationY,-180,180,200,255);
 	var b=(r+g)/2;
@@ -51,8 +51,8 @@ function ballMove() {
 	ax = rotationX;
 	ay = rotationY;
 
-	vx = vx+ ay/2;
-	vy = vy+ax/2;
+	vx = vx+ ay;
+	vy = vy+ax;
 	y = y + vy * vMultiplier; 
 	x = x + vx * vMultiplier;
 
