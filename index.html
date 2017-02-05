@@ -51,8 +51,8 @@ function ballMove() {
 	ax = rotationX;
 	ay = rotationY;
 
-	vx = vx+ ay;
-	vy = vy+ax;
+	vx = vx+ ay/2;
+	vy = vy+ax/2;
 	y = y + vy * vMultiplier; 
 	x = x + vx * vMultiplier;
 
