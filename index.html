@@ -40,9 +40,10 @@ function draw() {
 	var g=map(rotationY,-180,180,100,255);
 	var b=(r+g)/2;
     fill(r,g,b);
+	ellipse(x, y, 10, 10);
 	translate(y, x);
 	sphere(10);
-    ellipse(x, y, 10, 10);
+ 
 }
 
 function ballMove() {
